@@ -1,0 +1,218 @@
+:root {
+    --shadow: #666666;
+    --frontend: #37BDD4;
+    --backend: #D43737;
+    --web: #37d444;
+}
+
+body {
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Candara';
+    color: #FFFFFF;
+}
+
+.front-end {
+    background: linear-gradient(to top right,#000000, #343434 24%, var(--frontend) 25%, #353535 26%, #696969 49%, var(--frontend) 50%, #696969 51%, #000000) no-repeat fixed;
+}
+
+.back-end {
+    background: linear-gradient(to top right,#000000, #696969 49%, var(--backend) 50%, #696969 51%, #000000) no-repeat fixed;
+}
+
+.web {
+    background: linear-gradient(to top right,#000000, #696969 49%, var(--web) 50%, #696969 51%, #000000) no-repeat fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 30px;
+    padding-bottom: 10px;
+    font-family: 'Papyrus';
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.front-end nav {
+    border-bottom: 2px double var(--frontend);
+}
+
+.back-end nav {
+    border-bottom: 2px double var(--backend);
+}
+
+.web nav {
+    border-bottom: 2px double var(--web);
+}
+
+.front-end nav a:hover,
+.front-end h1 {
+    color: var(--frontend);
+}
+
+.back-end nav a:hover,
+.back-end h1 {
+    color: var(--backend);
+}
+
+.web nav a:hover,
+.web h1 {
+    color: var(--web);
+}
+
+section {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.front-end table {
+    border: 2px solid var(--frontend);
+}
+
+.back-end table {
+    border: 2px solid var(--backend);
+}
+
+.web table {
+    border: 2px solid var(--web);
+}
+
+table:hover {
+    box-shadow: 2px 2px 10px #FFFFFF;
+    transition: all .3s;
+}
+
+thead {
+    border: inherit;
+}
+
+td {
+    border-collapse: collapse;
+    padding: 10px;
+    table-layout: fixed;
+    width: 16%;
+}
+
+.projet {
+    background: linear-gradient(to top, rgb(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5) 25%, rgba(0, 0, 0, 0.75) 75%, #000000) no-repeat fixed;
+    height: 30px;
+    position: relative;
+}
+
+.projet h2 {
+    float: left;
+}
+
+.projectLessons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-style: italic;
+}
+
+.front-end td {
+    border: 1px solid var(--frontend);
+}
+
+.back-end td {
+    border: 1px solid var(--backend);
+}
+
+.web td {
+    border: 1px solid var(--web);
+}
+
+h1, h2 {
+    font-weight: bold;
+    font-family: 'Papyrus';
+    margin: 10px 0 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.front-end a:hover {
+    text-decoration: underline var(--frontend);
+}
+
+.back-end a:hover {
+    text-decoration: underline var(--backend);
+}
+
+.web a:hover {
+    text-decoration: underline var(--web);
+}
+
+.facile::before {
+    content: "f";
+    font-style: italic;
+    border-radius: 50px;
+    padding: 3px 10px;
+    float: left;
+}
+
+.moyenne::before {
+    content: "m";
+    font-style: italic;
+    margin-right: 10px;
+    border-radius: 50px;
+    padding: 7px 10px;
+    float: left;
+}
+
+.difficile::before {
+    content: "d";
+    font-style: italic;
+    margin-right: 10px;
+    border-radius: 50px;
+    padding: 7px 10px;
+    float: left;
+}
+
+.front-end .facile::before,
+.front-end .moyenne::before {
+        border: var(--frontend) 1px solid;
+    box-shadow: 2px 2px 3px var(--shadow);
+}
+
+.back-end .facile::before,
+.back-end .moyenne::before,
+.back-end .difficile::before {
+        border: var(--backend) 1px solid;
+    box-shadow: 2px 2px 3px var(--shadow);
+}
+
+.web .facile::before,
+.web .moyenne::before {
+        border: var(--web) 1px solid;
+    box-shadow: 2px 2px 3px var(--shadow);
+}
+
+.en_cours {
+    font-style: italic;
+    text-decoration: underline;
+
+}
+
+.vu {
+    color: #90EE90;
+    font-weight: bold;
+}
+
+table:nth-child(odd) { /* Sélectionne les éléments impairs, équivaut à (2n+1)*/
+    background: rgba(165, 165, 165, 0.745);
+}
+
+table:nth-child(even) { /* Sélectionne les éléments pairs, équivaut à (2n)*/
+    background: rgba(165, 165, 165, 0.314);
+}
